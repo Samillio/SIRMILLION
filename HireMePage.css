@@ -1,0 +1,60 @@
+/* HireMePage.css */
+
+/* Main container styles */
+.hire-me-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styles */
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Description styles */
+  .description {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact info styles */
+  .contact-info {
+    text-align: center;
+  }
+  
+  /* Social media links styles */
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #333; /* Default link color */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .contact-info a:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Icon styles */
+  .contact-info a svg {
+    margin-right: 5px; /* Add space between icon and text */
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  

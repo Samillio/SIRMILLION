@@ -1,0 +1,29 @@
+.skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .skills,
+  .experience {
+    flex: 0 0 calc(50% - 10px); /* Adjusted for borders */
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .skills,
+    .experience {
+      flex: 0 0 100%;
+    }
+  }
+  

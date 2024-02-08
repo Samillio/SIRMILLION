@@ -1,0 +1,62 @@
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .intro-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Default direction: left to right */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section {
+    flex: 0 0 40%; /* Adjusted for image width */
+  }
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .description-section {
+    flex: 0 0 55%; /* Adjusted for description width */
+    padding-left: 20px; /* Add padding between image and description */
+  }
+  
+  .description-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .description-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column; /* Change direction to top to bottom on small screens */
+      align-items: flex-start; /* Align items to the start of the container */
+    }
+  
+    .description-section {
+      flex: 0 0 100%; /* Full width for description */
+      margin-top: 20px;
+      padding-left: 0; /* Reset padding */
+    }
+  }
+  .h2{
+    color: greenyellow;
+  }
+  

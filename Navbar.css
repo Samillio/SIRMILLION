@@ -1,0 +1,43 @@
+.menu-toggle {
+  display: none; /* Hide the hamburger menu by default */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Align links at the center horizontally */
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Display the hamburger menu on small screens */
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none; /* Hide the navigation links by default on small screens */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 10;
+    text-align: center; /* Center the links vertically */
+  }
+
+  .nav-links.open {
+    display: flex; /* Display the navigation links when the menu is open */
+  }
+
+  .nav-links li {
+    margin-bottom: 1rem;
+  }
+}
